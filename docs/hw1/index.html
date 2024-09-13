@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>William Wellborn CPSC 332</title>
+</head>
+<body style="background-color:green">
+
+
+<h1>Homework 1</h1>
+<p>I hope to learn how to <em>develop on the web</em> since that was something I have <strong>never</strong> done before. HTML, CSS, etc. are all new to me. Hopefully it will prove useful in the future when I increase the amount of developing that I am capable of.</p>
+<img id="horse" src="juan.webp">
+<a href="https://www.reddit.com/r/MemeRestoration/comments/jypzoc/juan_definitive_edition/">Juan, sourced from reddit</a>
+</body>
+<button type="button" id="horseButton"> Miguel </button>
+<script>
+    var horseB = document.getElementById("horseButton");
+    var horseI = document.getElementById("horse");
+    let juanBool = true;
+    horseB.addEventListener("click", changePic);
+    function changePic()
+    {
+    if(juanBool)
+    {
+        horseI.src = "miguel.jpg";
+    }
+    else
+    {
+        horseI.src = "juan.webp";
+    }
+     juanBool = !juanBool;
+    }
+</script>
+</html> 
