@@ -1,0 +1,264 @@
+<!--William Wellborn, CPSC 332, HW3, Last Modified 10/02/2024-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+    <style>
+        body {
+            background-color: powderblue;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .top-pane {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .main-content {
+            display: flex;
+            width: 100%;
+        }
+
+        .left-pane {
+            width: 25%;
+            padding: 20px;
+            background-color: lightgray;
+        }
+
+        .right-pane {
+            width: 75%;
+            padding: 20px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        p {
+            text-align: justify;
+            margin: 20px 0;
+        }
+
+        ul, ol {
+            margin: 10px;
+            padding-left: 20px;
+        }
+
+        ul li, ol li {
+            padding: 5px 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="top-pane">
+        <h1>William's CV</h1>
+        <nav>
+            <a href="#introduction">Introduction</a>
+            <a href="#career">Career Summary</a>
+            <a href="#education">Education</a>
+            <a href="#qualifications">Qualifications</a>
+            <a href="#hobbies">Interests & Hobbies</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+
+        <div class="left-pane" id="introduction">
+            <img src="image1.webp" alt="Profile Image">
+            <h2>William Wellborn</h2>
+            <p>Computer Science Major</p>
+            <p>I am a Junior at <em>Gonzaga University</em> studying to get a bachelor's degree in <strong>Computer Science.</strong></p>
+        </div>
+
+        <div class="right-pane">
+            <section>
+                <h3>Core Skills</h3>
+                <ul>
+                    <li>Proficiency in: Java, JavaScript, Python, C++, Assembly</li>
+                    <li>Critical Thinking and Decision-Making</li>
+                    <li>Fast Learning</li>
+                    <li>Developmental Leadership</li>
+                    <li>Ability to work with and under colleagues</li>
+                    <li>Ability to work under pressure</li>
+                </ul>
+            </section>
+
+            <section id="career">
+                <h3>Career Summary</h3>
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Role</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Lice Knowing You, Inc.</strong></td>
+                        <td>June 2018</td>
+                        <td>Current</td>
+                        <td>Assistant Manager</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="education">
+                <h3>Education</h3>
+                <table>
+                    <tr>
+                        <th>Class Taken</th>
+                        <th>Year</th>
+                        <th>Skills Learned</th>
+                    </tr>
+                    <tr>
+                        <td><strong>CPSC260</strong></td>
+                        <td>2024</td>
+                        <td><em>x86, Assembly</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CPSC212</strong></td>
+                        <td>2024</td>
+                        <td><em>Computer Modeling</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CPSC223</strong></td>
+                        <td>2023</td>
+                        <td><em>Algorithms and Data Structures</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CPSC224</strong></td>
+                        <td>2023</td>
+                        <td><em>Software Development Fundamentals</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CPSC122</strong></td>
+                        <td>2022</td>
+                        <td><em>Basic Programming Languages</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>High School APs</strong></td>
+                        <td>2017-2022</td>
+                        <td><em>Java, Python, Development and Asset Generation Fundamentals</em></td>
+                    </tr>
+                    </table>
+            </section>
+    
+            <section id="qualifications">
+                <h3>Qualifications</h3>
+                <table>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Year</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><strong>MTA: Software Development Fundamentals</strong></td>
+                        <td>2021</td>
+                        <td><em>Microsoft Certification for the fundamentals of Software Development</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>MTA: Intro to Programming Using Python</strong></td>
+                        <td>2021</td>
+                        <td><em>Certification for Python Basics</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>MTA: Intro to Programming using Java</strong></td>
+                        <td>2021</td>
+                        <td><em>Microsoft Certification for Java Basics</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>MTA: Intro to Programming using JavaScript</strong></td>
+                        <td>2021</td>
+                        <td><em>Microsoft Certification for JavaScript Basics</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adobe Certified Professional in Graphic Design & Illustration Using Adobe Illustrator</strong></td>
+                        <td>2021</td>
+                        <td><em>Mirosoft and Adobe Certification for Adobe Illustrator Basics</em></td>
+                    </tr>
+                    </table>
+            </section>
+
+
+            <section id="hobbies">
+                <h3>Interests and Hobbies</h3>
+                <ol>
+                    <li>Software Development</li>
+                    <li>History Study</li>
+                    <li>Cooking</li>
+                    <li>Outdoors Activity</li>
+                    <li>Kendo</li>
+                    <a href="https://en.wikipedia.org/wiki/Kendo" target="_blank">
+                        <img src="kendo.jpg" alt="kendo" width="100">
+                    </a>
+                </ol>
+            </section>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
