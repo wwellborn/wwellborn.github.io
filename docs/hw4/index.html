@@ -1,0 +1,123 @@
+<!--William Wellborn, CPSC 332, HW4, Last Modified 10/03/2024-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+    <style>
+        header{ /*header positioned to the tippy top of the page*/
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            padding:30px;
+            position:relative;
+            top:-30px;
+            left: -30px;
+            width:100%;
+            justify-content: stretch;
+        }
+        body { /*background*/
+            background-color: orange;
+            font-family: Arial, sans-serif;
+      
+        }
+        footer{ /*footer aligned to the absolute floor*/
+            background-color: purple;
+            padding:30px;
+            font-size:30px;
+            color:orange;
+            position:fixed;
+            bottom:0;
+            left:0;
+            width:100%;
+            justify-content: stretch;
+        }
+
+        .candies { /*overall container of the candy boxes, flexbox*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .candybox{ /*each element in the flex box*/
+            width: 150px;
+            height: 150px;
+            border: 10px solid black;
+            background-color: darkgray;
+        }
+        
+        .candybox img{ /*use this to ensure each candy remains IN the box.*/
+            max-width: 100%;
+            height: auto;
+            flex: 1 1 auto;
+            object-fit: cover;
+        }
+        h4{
+            position:relative;
+            color:orangered;
+            top:-55px;
+            font-size: 20px;
+        }
+        .candybox:hover{ /*add hover effects*/
+            border:10px dashed red;
+            /*Extra credit */
+            animation: bounce 0.5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            
+        }
+
+        
+
+        @keyframes bounce{ /*hover animation keyframes.*/
+            from{transform:translate(0,0);}
+            to{transform:translate(0,-20px);}
+        }
+    </style>
+</head>
+<header>
+    <h3>Trick or Treat Candy Collection</h3>
+</header>
+<body>
+    <main>
+        <section class="candies"> <!--flexbox and elements are here.-->
+            <div class="candybox">
+                <img src="hersheys.webp" alt="Hershey's"></a>
+                <h4>HERSHEY'S</h4>
+            </div>
+            
+            <div class="candybox">
+                <img src="snickers.webp" alt="Snickers"> </a>
+                <h4>SNICKERS</h4>
+            </div>
+            <div class="candybox">
+                <img src="mandms.webp" alt="M&Ms"> </a>
+                <h4>M&Ms</h4>
+            </div>
+            <div class="candybox">
+                <img src="skittles.webp" alt="Skittles"> </a>
+                <h4>SKITTLES</h4>
+            </div>
+            <div class="candybox">
+                <img src="twix.jpg" alt="Twix"> </a>
+                <h4>TWIX</h4>
+            </div>
+            <div class="candybox">
+                <img src="toblerone.jpg" alt="toblerone"> </a>
+            `   <h4>TOBLERONE</h4>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <!--extra credit-->
+        <h3>Happy Halloween!!</h3>
+    </footer>
+
+</body>
+</html>
